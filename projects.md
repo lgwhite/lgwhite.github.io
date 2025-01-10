@@ -16,6 +16,6 @@ title: Projects
 
     {% endfor %}
 
-    </main>
+</main>
 
 <section class="clear"></section>

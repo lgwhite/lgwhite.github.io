@@ -19,7 +19,7 @@
   border-bottom: 1px black solid;
 }
 .textbox {
-  border-top: 1px #ff0000 solid;
+  border-top: 1px #1E38CE solid;
   padding: 15px 50px 50px 50px;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -66,7 +66,7 @@ ul {
 }
 /*----------- HEADER --------------*/
 header {
-  border-top: 1px #ff0000 solid;
+  border-top: 1px #1E38CE solid;
   padding: 15px 50px 50px 50px;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -88,6 +88,8 @@ header h1 {
   margin-right: 22px;
 }
 nav {
+  display: flex;
+  justify-content: flex-end;
   width: 50%;
 }
 nav li {
@@ -108,7 +110,6 @@ nav li:first-child {
 /*----------- HOMEPAGE --------------*/
 .intro {
   width: auto;
-  border-top: 1px #ff0000 solid;
   padding: 15px 50px 50px 50px;
   font-size: 80px;
   height: 70vh;
@@ -118,11 +119,11 @@ nav li:first-child {
   border-bottom: 3px solid grey;
 }
 .intro a:hover {
-  border-bottom: 3px solid red;
+  border-bottom: 3px solid #1E38CE;
 }
 /*----------- PROJECTS --------------*/
 .object {
-  border-top: 1px #ff0000 solid;
+  border-top: 1px #1E38CE solid;
   padding: 15px 50px 50px 50px;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -195,7 +196,7 @@ nav li:first-child {
 /*  align-items: baseline;*/
   width: auto;
   padding: 50px 50px 50px 50px;
-border-top: 1px solid #ff0000;
+border-top: 1px solid #1E38CE;
 }
 
 .text {
@@ -240,8 +241,8 @@ border-top: 1px solid #ff0000;
   border-bottom: 1px black solid;
 }
 .text article a:hover {
-  border-bottom: 1px #ff0000 solid;
-  color: red;
+  border-bottom: 1px #1E38CE solid;
+  color: #1E38CE;
 }
 .profile sidebar {
   -webkit-flex: 1;
@@ -258,7 +259,7 @@ border-top: 1px solid #ff0000;
 border-bottom: 1px solid black;
 }
 .profile sidebar p a:hover{
-border-bottom: 1px solid #ff0000;
+border-bottom: 1px solid #1E38CE;
 }
 .profile sidebar h4 {
     font-size: 16px;
@@ -284,7 +285,7 @@ border-bottom: 1px solid #ff0000;
 .profile sidebar .portrait {
     width: 100%;
     border-radius: 50%;
-    border: 1px solid #ff0000;
+    border: 1px solid #1E38CE;
     margin-bottom: 25px;
 }
 input[type="email"] {
@@ -304,6 +305,28 @@ input[type="submit"] {
     box-shadow: none;
     border: none;
 }
+
+/*-----BLOG-----*/
+.blog-list{
+  padding: 15px 50px 50px 50px;
+  display: flex;
+  border-top: 1px solid #1E38CE;
+}
+
+.blog-list:last-child{
+  border-bottom: 1px solid #1E38CE;
+}
+
+.date{
+ width: 25%;
+}
+
+.blog-title{
+  width: 50%;
+ }
+
+
+
 /*----------- WRITING --------------*/
 .essay {
   width: 55%;
@@ -329,14 +352,14 @@ article h4 {
 article a {
   font-family: 'Plantin', Georgia, Times, serif;
   font-size: 21px;
-  border-bottom: 1px #ff0000 solid;
+  border-bottom: 1px #1E38CE solid;
 }
 article a:hover {
-  color: red;
+  color: #1E38CE;
 }
 article blockquote {
   padding-left: 2em;
-  border-left: 1px #ff0000 solid;
+  border-left: 1px #1E38CE solid;
   font-style: italic;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -369,10 +392,10 @@ figcaption a {
   font-family: 'Karla', Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 18px;
-  border-bottom: 1px #ff0000 solid;
+  border-bottom: 1px #1E38CE solid;
 }
 figcaption a:hover {
-  color: red;
+  color: #1E38CE;
 }
 .footnote {
   font-family: 'Karla', Helvetica, Arial, sans-serif;
@@ -389,7 +412,7 @@ figcaption a:hover {
   font-size: 16px;
   color: #000000;
   line-height: 1.5em;
-  border-top: 1px #ff0000 solid;
+  border-top: 1px #1E38CE solid;
   margin-top: 25px;
   padding-top: 25px;
   color: rgba(0, 0, 0, 0.5);
@@ -398,11 +421,11 @@ figcaption a:hover {
   font-family: 'Karla', Helvetica, Arial, sans-serif;
   font-size: 16px;
   color: #000000;
-  border-bottom: 1px #ff0000 solid;
+  border-bottom: 1px #1E38CE solid;
   color: rgba(0, 0, 0, 0.5);
 }
 .notes a:hover {
-  color: red;
+  color: #1E38CE;
 }
 /*----------- RESPONSIVE VIDEO --------------*/
 .responsive-container {
@@ -421,8 +444,8 @@ figcaption a:hover {
 }
 /*----------- ARCHIVE--------------*/
  .about-intro {
-      padding: 15px 25% 100px 50px;
-         border-top: 1px solid #ff0000;
+      padding: 50px;
+         border-top: 1px solid #1E38CE;
         height: auto;
 }
 .about-intro p {
@@ -437,7 +460,7 @@ figcaption a:hover {
     }
     .archive-preview h1 {
         padding: 100px 50px 25px 50px;
-                 border-top: 1px solid #ff0000;
+                 border-top: 1px solid #1E38CE;
     }
     .archive-preview .object:first { border-top: none; }
     .archive-preview .object {
@@ -480,55 +503,10 @@ figcaption a:hover {
     padding-bottom: 20px;
 }
 
-/*----------- PLAYLISTS LIBRARY --------------*/
-#playlist-container {
-        display: flex;
-      max-width: 100%;
-        border-top: 1px solid red;
-        padding: 25px;
-        flex-flow: wrap;
-            align-items: baseline;
-    }
-.playlist-cover {
-    width: 20%;
-    padding: 25px;
-    padding-bottom: 75px;
-    align-items: baseline;
-}
-.playlist-cover figure {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    position: relative;
-        align-items: baseline;
-}
-.playlist-cover figure:hover {
-        opacity: 70%;
-    }
-.playlist-cover figure img {
-    width: 100%;
-    padding-bottom: 5px;
-    bottom: 0;
-        align-items: baseline;
-}
-.playlist-cover figcaption {
-    width: 100%;
-}
-.playlist-cover figcaption h1 {
-        font-size: 16px;
-        line-height: 18px;
-        color: rgba(0,0,0,.6);
-    }
-.playlist-cover figcaption h2 {
-        font-size: 16px;
-        line-height: 18px;
-        color: rgba(0,0,0,.4);
-        font-weight: normal;
-    }
 
 /*----------- RECENTLY --------------*/
 .recently {
-    border-top: 1px solid red;
+    border-top: 1px solid #1E38CE;
     padding: 15px;
 }
 .recently p {
@@ -552,7 +530,7 @@ figcaption a:hover {
     padding-bottom: 10px;
 }
 .recently-feature {
-        border-top: 1px solid red;
+        border-top: 1px solid #1E38CE;
     padding: 15px;
     display: flex;
     box-sizing: border-box;
@@ -574,21 +552,25 @@ figcaption a:hover {
 
 /*----------- FOOTER --------------*/
 footer {
-  border-top: 1px #ff0000 solid;
   padding: 15px 50px 50px 50px;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  justify-content: space-between;
   width: 100%;
   width: auto;
+
 }
 .left {
   width: 50%;
   box-sizing: border-box;
 }
-.right {
-  width: 50%;
-  margin-left: 25px;
+.right a {
+ padding: 0 5px;
+}
+
+.right a:last-child{
+  padding-right: 0;
 }
 
 /*-----------------------------------
@@ -629,7 +611,7 @@ TABLET
     width: 100%;
   }
     .about-intro {
-              padding: 15px 50px 100px 50px;
+              padding:  50px 100px 50px;
     }
     .about-intro p {
         font-size: 30px;
@@ -805,13 +787,15 @@ TABLET
     padding-left: 25px;
   }
   .right {
+    display: flex;
+    justify-content: flex-end;
     margin-left: 0px;
     width: 100%;
   }
  /*ARCHIVE */
     .about-intro {
       padding: 15px 25px 25px 25px;
-      border-top: 1px solid #ff0000; }
+      border-top: 1px solid #1E38CE; }
     .about-intro a {font-size: 28px; }
     .about-intro p { font-size: 28px; }
     .archive-preview .object { padding: 15px 25px 15px 25px; }
@@ -822,7 +806,7 @@ TABLET
     .term { width: 100%; }
     .school { width: 100%; }
     .archive-preview h1 { padding: 50px 25px 15px 25px;
-                 border-top: 1px solid #ff0000;
+                 border-top: 1px solid #1E38CE;
     }
     .images h1 { padding: 15px 25px 25px 25px; }
     .images-left, .images-right {padding-bottom: 25px;}
@@ -884,4 +868,5 @@ border-bottom: 1px solid white;
     .playlist-cover figcaption h1,
     .playlist-cover figcaption h2 {
         color: white;
+}
 }

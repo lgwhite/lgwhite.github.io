@@ -1,86 +1,99 @@
 <!DOCTYPE html>
 <html>
-    <head>
-    <title>{{ page.title }}—Jarrett Fuller</title>
-        <meta name="viewport" content="width=device-width">
-        <meta charset="UTF-8">
-            <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/styles.css" />
-       <link href='https://fonts.googleapis.com/css?family=Karla:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
-        <link href='https://fonts.googleapis.com/css?family=Tinos:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="https://use.typekit.net/tqa3xxl.css">
-        <link rel="icon" type="image/png" href="/images/icon.ico">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-        <style type="text/css">
-.preview {
-  set the width you want here. This will automagically limit the width of the anchors too;
-}
 
-/*all anchors in this ul*/
-.preview a {
-    width: 100%; /*this Haslayout trigger taking the place of zoom and therefore passes the validator, if it matters. Width is already naturally 100% by default anyway so we haven't changed anything except trigger Haslayout for IE*/
-    position:relative;
-    text-decoration:none;
-}
-/*all images inside boat ul*/
-.preview img {
-    position: fixed;
-    display: block; /*abso-position is already block context; you only need this line if IE is squirrely without it. Otherwise, take this line out*/
-    margin-left:-9999px; /*IE likes margins better than "left" for some reason*/
-    top:10%;
-    left: 0; /*but set a left and top for stability*/
-    z-index: -900;
-    width: 90%;
-}
+<head>
+    <title>{{ page.title }}</title>
+    <meta name="viewport" content="width=device-width">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/styles.css" />
+    <link href='https://fonts.googleapis.com/css?family=Karla:400,400italic,700,700italic' rel='stylesheet'
+        type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Tinos:400,400italic,700,700italic' rel='stylesheet'
+        type='text/css'>
+    <link rel="stylesheet" href="https://use.typekit.net/tqa3xxl.css">
+    <link rel="icon" type="image/png" href="/images/icon.ico">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <style type="text/css">
+        .preview {
+            /* set the width you want here. This will automagically limit the width of the anchors too; */
+        }
 
-.preview a:hover, .preview a:focus {
-}
+        /*all anchors in this ul*/
+        .preview a {
+            width: 100%;
+            /*this Haslayout trigger taking the place of zoom and therefore passes the validator, if it matters. Width is already naturally 100% by default anyway so we haven't changed anything except trigger Haslayout for IE*/
+            position: relative;
+            text-decoration: none;
+        }
 
-.preview a:hover img, .preview a:focus img {
-    margin-left: 5%; /*set the image where you want it on hover/focus of anchor*/
-}
+        /*all images inside boat ul*/
+        .preview img {
+            position: fixed;
+            display: block;
+            /*abso-position is already block context; you only need this line if IE is squirrely without it. Otherwise, take this line out*/
+            margin-left: -9999px;
+            /*IE likes margins better than "left" for some reason*/
+            top: 10%;
+            left: 0;
+            /*but set a left and top for stability*/
+            z-index: -900;
+            width: 90%;
+        }
 
-        </style>
+        .preview a:hover,
+        .preview a:focus {}
 
-    </head>
-    <body id="top"><!-- Start of StatCounter Code -->
-<script type="text/javascript">
-sc_project=862958;
-sc_invisible=1;
-sc_partition=3;
-sc_security="4b79b18c";
-</script>
+        .preview a:hover img,
+        .preview a:focus img {
+            margin-left: 5%;
+            /*set the image where you want it on hover/focus of anchor*/
+        }
+    </style>
 
-<script type="text/javascript" src="http://www.statcounter.com/counter/counter_xhtml.js"></script><noscript><div class="statcounter"><a href="http://www.statcounter.com/" target="_blank"><img class="statcounter" src="http://c4.statcounter.com/862958/0/4b79b18c/1/" alt="free counter statistics" ></a></div></noscript>
-<!-- End of StatCounter Code -->
-        <header><h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.title }}</a></h1>
-            <nav><ul>
+</head>
+
+<body id="top">
+    <header>
+        <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.title }}</a></h1>
+        <nav>
+            <ul>
                 <li><a href="{{ site.baseurl }}/projects">Work</a></li>
-                <li><a href="{{ site.baseurl }}/teaching">Teaching</a></li>
                 <li><a href="{{ site.baseurl }}/about">About</a></li>
-                <li><a href="http://jarrettfuller.blog">Blog</a></li>
+                <li><a href="{{ site.baseurl }}/blog">Blog</a></li>
 
-             </ul></nav></header>
+            </ul>
+        </nav>
+    </header>
 
 
 
-<div id="container">
-      {{ content }}
+    <div id="container">
+        {{ content }}
     </div>
 
-        <footer><div class="left"><p>&copy <script language="javascript" type="text/javascript">
-var today = new Date()
-var year = today.getFullYear()
-document.write(year)
-            </script> Jarrett Fuller.</p></div>
+    <footer>
 
-    <div class="right"><p><a href="mailto:jarrettfuller@gmail.com">Email</a> | <a href="https://jarrettfuller.substack.com">Substack</a> | <a href="http://www.instagram.com/jarrettfuller">Instagram</a> | <a href="https://are.na/jarrett-fuller">Are.na</a> | <a href="https://read.cv/jarrettfuller">Read.CV</a> | <a href="https://open.spotify.com/user/jarrettfuller/">Spotify</a></p></div>
+        <p>&copy
+            <script language="javascript" type="text/javascript">
+                var today = new Date()
+                var year = today.getFullYear()
+                document.write(year)
+            </script> Lilly White.
+
+        <div class="right">
+            <a href="mailto:lillygracewhite1@gmail.com">Email</a> | <a
+                href="https://www.instagram.com/lillyis.documenting/">Instagram</a> | <a
+                href="https://www.are.na/lilly-white/">Are.na</a> | <a href="https://read.cv/lillywhite">Read.CV</a>
+        </div>
     </footer>
-        <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
-                <script>
-            $(".images .to-top a").click(function(event) {
-                event.preventDefault();
-                $("body,body").animate({scrollTop:$(this.hash).offset().top}, 400);
-            });
-        </script>
-    </body>
+    <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script>
+        $(".images .to-top a").click(function (event) {
+            event.preventDefault();
+            $("body,body").animate({ scrollTop: $(this.hash).offset().top }, 400);
+        });
+    </script>
+</body>
+
 </html>
